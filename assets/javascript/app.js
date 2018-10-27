@@ -21,7 +21,7 @@ $(document).on('click', '#start', function(e) {
   $(document).on('click', '#submit', function(e) {
     finish();
 });
-
+// reset button
 $(document).on('click', '#reset', function(e) {
     reset();
 });
@@ -153,6 +153,7 @@ function result(){
     quizArea.append('<button id="reset">Reset</button>');
 }
 
+// Reset function
 function reset(){$
     $('#subWrapper h3').remove();
     $('#subWrapper h2').remove();
