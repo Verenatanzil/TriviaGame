@@ -22,6 +22,10 @@ $(document).on('click', '#start', function(e) {
     finish();
 });
 
+$(document).on('click', '#reset', function(e) {
+    reset();
+});
+
 // array for the questions
 var questions = [{
     q: "What is the smallest planet in the Solar System?",
@@ -146,4 +150,16 @@ function result(){
     quizArea.append('<h3>Correct Answers: ' + correct + '</h3>');
     quizArea.append('<h3>Incorrect Answers: ' + incorrect + '</h3>');
     quizArea.append('<h3>Unanswered Questions: ' + (questions.length - (incorrect + correct)) + '</h3>');
+    quizArea.append('<button id="reset">Reset</button>');
+}
+
+function reset(){$
+    $('#subWrapper h3').remove();
+    $('#subWrapper h2').remove();
+    $('#reset').remove();
+    correct = 0;
+    incorrect = 0;
+    counter = 70;
+    clearInterval(timer);
+    begin();
 }
