@@ -16,12 +16,14 @@
 
 body{
     background-image: url(../images/background2.jpg);
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif
 }
 
 header{
     font-size: 60px;
     color: aliceblue;
+    font-family: 'Lobster', cursive;
 }
 
 p{
@@ -35,14 +37,15 @@ h2{
 button{
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px;
     text-align: center;
     display: inline-block;
     font-size: 30px;
-    width: 100%;
+    width: 200px;
     background: transparent;
     border: none;
     display:block;
+    margin: 0 auto;
 }
 
 button:focus {
@@ -53,11 +56,20 @@ button:focus {
     margin-top: 3%;
 }
 
-.time{
+#counternum{
     color: white;
+    font-size: 30px;
+}
+
+.time{
     font-size: 30px;
 }
 
 button:hover{
     color: rgb(159, 120, 192);
+}
+
+.gj{
+    font-size: 30px;
+    /* color: white; */
 }
