@@ -24,7 +24,7 @@ $(document).on('click', '#start', function(e) {
 // reset button
 $(document).on('click', '#reset', function(e) {
     reset();
-});
+}); 
 
 // array for the questions
 var questions = [{
@@ -85,6 +85,7 @@ function begin() {
 
 // when submit button is clicked, each question is being checked to see if the answer match the question, 
 // if they match, correct increase by one 
+// BETTER TO CREATE A FUNCTION INSTEAD OF WRITING EACH ONE
 function finish() {
     $.each($("input[name='q-0']:checked"), function() {
         if ($(this).val() == questions[0].c) {
@@ -125,7 +126,7 @@ function finish() {
         if ($(this).val() == questions[5].c) {
         correct++;
         } else {
-        ncorrect++;
+        incorrect++;
         }
     });
     $.each($("input[name='q-6']:checked"), function() {
